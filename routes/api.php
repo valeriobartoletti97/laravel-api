@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProjectController;
 use App\Http\Controllers\Api\TypesController;
+use App\Http\Controllers\Api\LeadController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +26,6 @@ Route::Get('/projects', [ProjectController::class,'index']);
 Route::Get('/projects/{id}', [ProjectController::class,'show']);
 
 Route::Get('/types', [TypesController::class,'index']);
+Route::Post('contacts', [LeadController::class,'store']);
+
 
