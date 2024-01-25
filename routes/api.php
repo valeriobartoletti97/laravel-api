@@ -26,6 +26,6 @@ Route::Get('/projects', [ProjectController::class,'index']);
 Route::Get('/projects/{id}', [ProjectController::class,'show']);
 
 Route::Get('/types', [TypesController::class,'index']);
-Route::Post('contacts', [LeadController::class,'store']);
+Route::Post('/contacts', [LeadController::class,'store']);
 
 
